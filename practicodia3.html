@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content = "width =, initial-scale=1.0">
+    <title>practicodia3</title>
+</head>
+<body>
+    <script>
+
+       // 1Declarar las siguientes variables; nombre, apellido, país, ciudad, edad, está casado, año y autoriza un valor, use el operador typeof para verificar diferentes tipos de datos.
+let nombre = "gonzalo";
+console.log(typeof nombre);
+let apellido  = "Rodriguez";
+console.log(typeof apellido);
+let pais = "bolivia";
+console.log(typeof pais);
+let ciudad = "cochabamba";
+console.log(typeof ciudad);
+let edad = 30
+console.log(typeof edad );
+let estacasado = "no"
+console.log(typeof estacasado);
+let año = 2023
+console.log(typeof año);
+
+
+//2Verifique si typeof '10' es igual a 10
+let numero = "10"
+let numero1 = 10
+
+console.log (typeof numero === numero1);
+
+
+
+// 3Verifique si parseInt('9.8') es igual a 10
+ let Numero = "9.8";
+ let Numero1 = 10
+
+ let numInt = parseInt (numero === Numero)
+console.log (Numero === Numero1);
+
+// 4Verifique cualquier valor booleano verdadero o falso.
+
+// a Escriba tres declaraciones de JavaScript que proporcionen un valor verdadero.
+console.log(5 > 2); // true, porque 3 es mayor que 2
+console.log(4 >= 2); // true, porque 3 es mayor que 2
+console.log(2 < 7); // true, porque 2 es menor que 3
+
+// b Escriba tres declaraciones de JavaScript que proporcionen un valor falso.
+
+console.log("celular".length == "libro".length); // false
+console.log("auto".length == "avion".length); // true
+console.log("chamarra".length < "radio".length); // true
+
+
+// 5Calcule primero el resultado de la siguiente expresión de comparación sin usar console.log(). Después de decidir el resultado, confirmelo usando console.log()
+
+console.log(4 > 3);
+console.log(4 >= 3);
+console.log(4 < 3);
+console.log(4 <= 3);
+console.log(4 == 4);
+console.log(4 === 4);
+console.log(4 != 4);
+console.log(4 !== 4);
+console.log(4 != '4');
+console.log(4 == '4');
+console.log(4 === '4');
+//Encuentre la longitud de Python y jerga y haga una declaración de comparación falsa.
+
+let longitud = "Python";
+console.log(longitud.length);
+
+let longitud1 = "jerga";
+console.log(longitud1.length);
+
+
+// 6 Calcule primero el resultado de las siguientes expresiones sin usar console.log(). Después de decidir el resultado, confirmelo usando console.log()
+
+
+let numero2 = 4 > 3 && 10 < 12
+console.log(numero2);
+let numero3 = 4 > 3 && 10 > 12
+console.log(numero3);
+let numero4 = 4 > 3 || 10 < 12
+console.log(numero4);
+let numero5 = 4 > 3 || 10 > 12
+console.log(numero5);
+let numero6 = !(4 > 3)
+console.log(numero6);
+let numero7 = !(4 < 3)
+console.log(numero7);
+let numero8 = '!(FALSO)'
+console.log(numero8);
+let numero9 = !(4 > 3 && 10 < 12)
+console.log(numero9);
+let numero0 = !(4 > 3 && 10 > 12)
+console.log(numero0);
+let Numero2 = !(4 === '4')
+console.log(Numero2);
+
+//No hay 'on' tanto en dragon como en python
+
+let palabra1 = "pyton";
+let palabra2 = "dragon";
+
+console.log(palabra1.includes('on'));
+console.log(palabra2.includes('on'));
+
+// 7 Use el objeto Date para realizar las siguientes actividades
+
+//¿Qué año es hoy?
+const year = new Date();
+console.log(year.getFullYear()); 
+//¿Qué mes es hoy con un número?
+const month = new Date();
+console.log(month.getMonth());
+//¿Qué fecha es hoy?
+const fecha = new Date();
+console.log(fecha.getDate()); 
+///¿Qué día es hoy con un número?
+const dia = new Date();
+console.log(dia.getDay());
+//¿Cuál es la hora actual?
+const now = new Date();
+console.log(now.getHours())
+//¿Cuántos minutos hay actualmente?
+const minutos  = new Date();
+console.log(minutos.getMinutes());
+//Averigüe el número de segundos transcurridos desde el 1 de enero de 1970 hasta ahora.
+const allSeconds = Date.now(); 
+console.log(allSeconds);
+
+//practica # 3
+
+
+/*Escriba un script que solicite al usuario que ingrese la base y la altura del triángulo y calcule el área de un triángulo (área = 0,5 x b x h).
+
+Ingrese base: 20
+Ingrese altura: 10
+El área del triángulo es: 100*/
+
+function calculararea(area,base,altura){
+    return(area * base * altura) / 2
+}
+
+console.log(calculararea(0.5, 20, 10)) ;
+
+/*Escriba un script que solicite al usuario que ingrese el lado a, el lado b y el lado c del triángulo y calcule el perímetro del triángulo (perímetro = a + b + c)
+
+Ingrese lado a: 5
+Ingrese lado b: 4
+Ingrese lado c: 3
+El perimetro del triangulo es: 12*/
+
+function calcularperometro(a, b, c){
+
+    return(a + b + c);
+
+}
+
+console.log(calcularperometro(5, 4, 3));
+
+/* Obtenga el largo y el ancho usando prompt y calcule el área del rectángulo (área = largo x ancho y el perímetro del rectángulo (perímetro = 2 x (largo + ancho))
+
+
+let calcular1 = prompt("area"); { 
+ 
+ return1(4 * 5 ) /2
+ console.log(calcular1(4, 5, 2));
+  }
+
+ let calcular = prompt("perimetro");{ 
+ return2(4 + 5) * 2
+  
+ }
+console.log(calcular(4, 5, 2))
+
+//alert("carlular" + 4, 5, 2 );*/
+
+
+
+
+
+//Obtenga el radio usando prompt y calcule el área de un círculo (área = pi x r x r) y la circunferencia de un círculo (c = 2 x pi x r) donde pi = 3.14.
+
+const PI = 3.14;
+let radius = 50; 
+
+
+const areaOfCircle1 = PI * radius * radius;
+console.log(areaOfCircle1)
+
+
+
+
+/*const PI = 3.14;
+let radius = 100; // longitud en metros
+
+//Calculemos el área de un circulo
+const areaOfCircle = PI * radius * radius;
+console.log(areaOfCircle); //  314 m*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
